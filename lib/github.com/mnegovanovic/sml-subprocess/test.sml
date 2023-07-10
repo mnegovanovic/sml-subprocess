@@ -27,14 +27,14 @@ val _ = test "test-long-out" (long_string^"\n") (fn x => x) (fn () =>
         valOf out
     end)
 
-val _ = test "test-zero-pid" 0 Int.toString (fn () =>
+val _ = test "test-zero-exit-code" 0 Int.toString (fn () =>
     let
         val (pid, _) = Popen.exec "echo 'Hello World!'; exit 0;"
     in
         valOf pid
     end)
 
-val _ = test "test-non-zero-pid" 42 Int.toString (fn () =>
+val _ = test "test-non-zero-exit-code" 42 Int.toString (fn () =>
     let
         val (pid, _) = Popen.exec "echo 'Hello World!'; exit 42;"
     in
