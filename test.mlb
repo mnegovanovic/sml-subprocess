@@ -1,5 +1,5 @@
 $(SML_LIB)/basis/basis.mlb
-../../../../lib/github.com/mnegovanovic/sml-mn-utils/utils.mlb
-../../../../lib/github.com/mnegovanovic/sml-subprocess/subprocess.mlb
+../sml-mn-utils/utils.mlb
+subprocess.mlb
 test.sml
 
