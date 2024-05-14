@@ -1,5 +1,0 @@
-package github.com/mnegovanovic/sml-subprocess
-
-require {
-  github.com/mnegovanovic/sml-mn-utils 0.0.3 #fadea68495046862594753fd4e0974659a4cc991
-}
